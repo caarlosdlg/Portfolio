@@ -1,0 +1,119 @@
+.mywork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 80px 170px;
+}
+
+.mywork-title {
+  position: relative;
+}
+
+.mywork-title h1 {
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600;
+  background: linear-gradient(
+    270deg,
+    var(--gradient-start) 50.41%,
+    var(--gradient-end) 90.25%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mywork-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.mywork-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.mywork-showmore {
+  display: flex;
+  gap: 15px;
+  border-radius: 50px;
+  border: 2px solid var(--meta-dark-blue);
+  color: var(--meta-dark-blue);
+  padding: 30px 60px;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 80px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.mywork-showmore:hover {
+  gap: 30px;
+  transition: all 0.4s;
+}
+
+.repo {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  background-color: #f6f8fa; /* GitHub uses a light gray background */
+  border: 1px solid #e1e4e8; /* GitHub uses a light gray border */
+  border-radius: 6px; /* GitHub uses slightly rounded corners */
+  padding: 16px; /* GitHub uses a bit of padding */
+  margin-bottom: 16px; /* space between cards */
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.repo:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+
+.repo h2 {
+  font-size: 20px; /* GitHub uses a smaller font size for repo names */
+  font-weight: 600;
+  color: #0366d6; /* GitHub uses a blue color for repo names */
+  margin-bottom: 8px; /* space between the name and description */
+}
+
+.repo p {
+  font-size: 14px; /* GitHub uses a smaller font size for repo descriptions */
+  font-weight: 400; /* GitHub uses a normal font weight for repo descriptions */
+  color: #586069; /* GitHub uses a gray color for repo descriptions */
+}
+
+@media (max-width: 768px) {
+  .mywork {
+    gap: 50px;
+    padding: 50px 70px;
+    align-items: start;
+  }
+
+  .mywork-title h1 {
+    padding: 0;
+    font-size: 50px;
+    font-weight: 600;
+  }
+
+  .mywork-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .repo {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mywork-showmore {
+    padding: 20px 40px;
+    font-size: 18px;
+    margin: 50px auto;
+    cursor: pointer;
+  }
+}

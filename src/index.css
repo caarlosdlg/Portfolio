@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --meta-blue: #0081fb;
+  --meta-light-blue: #42b0ff;
+  --meta-dark-blue: #006aff;
+  --meta-gray: #90949c;
+  --meta-light-gray: #f0f2f5;
+  --meta-dark-gray: #4b4f56;
+  --gradient-start: #007bff;
+  --gradient-end: #0056b3;
+}
+
+body {
+  height: 100vh;
+  background: black;
+  color: var(--dark-green);
+  font-family: "outfit";
+}
+
+#profile-img {
+  min-width: 350px;
+  min-height: 350px;
+  max-width: 350px;
+  max-width: 350px;
+  border-radius: 50%;
+}
